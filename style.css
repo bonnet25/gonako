@@ -1,0 +1,1577 @@
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+
+}
+
+/* Navbar Top */
+.navbar-top {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  transition: top 0.3s ease;
+  background-color: #fceecf;
+  padding: 0.1% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-transition: top 0.3s ease;
+  -moz-transition: top 0.3s ease;
+  -ms-transition: top 0.3s ease;
+  -o-transition: top 0.3s ease;
+}
+
+.navbar-top.hide {
+  top: -100px;
+}
+
+.navbar-top .icon-sosmed img {
+  display: flexbox;
+  margin: 0.2rem;
+  vertical-align: middle;
+}
+.navbar-top .icon-sosmed :hover {
+  color: #673e1d;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.mail img {
+  vertical-align: middle;
+}
+.mail .info-detail {
+  color: #683c11;
+}
+
+.whatsapp img {
+  vertical-align: middle;
+}
+.whatsapp .info-detail {
+  color: #683c11;
+}
+
+.whatsapp {
+  margin-left: 1rem;
+}
+/* Navbar Top End */
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 5%;
+  background-color: #fcf7eb;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.navbar-nav a {
+  color: #f1761c;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+.navbar-nav :hover {
+  color: #673e1d;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #673e1d;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.9);
+  -webkit-transform: scaleX(0.9);
+  -moz-transform: scaleX(0.9);
+  -ms-transform: scaleX(0.9);
+  -o-transform: scaleX(0.9);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #f1761c;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 3;
+}
+
+.dropdown-content a {
+  font-size: 1.1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Navbar End */
+
+/* Menu Sidebar Navbar Extra */
+
+.navbar .navbar-extra a {
+  color: #ef613b;
+}
+.navbar .navbar-extra a:hover {
+  color: #673e1d;
+}
+#burger {
+  display: none;
+}
+/* Menu Sidebar End */
+
+/* Home */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: top;
+  background-image: url(assets/Banner-gonako-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.home .isi-home {
+  padding: 1.4rem 6%;
+  max-width: 50rem;
+  margin-top: 10%;
+}
+
+.home .isi-home h1 {
+  font-size: 4rem;
+  color: #683c11;
+  line-height: 1.2;
+  text-shadow: 0.5px 0.5px 2px rgb(241, 95, 54);
+}
+.home .isi-home h1 span {
+  color: #f34617;
+  text-shadow: 1px 1px 3px rgb(56, 29, 2);
+}
+.home .isi-home p {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-top: 2rem;
+  color: #502a04;
+  text-shadow: 5px 5px 10px white;
+}
+.home .isi-home .tombol {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #f34617;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: 2px 2px 1px rgba(1, 1, 1, 0.5);
+}
+.home .isi-home .tombol:hover {
+  background-color: #502a04;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+/* Home End */
+
+/* Why-us */
+.why-us {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+}
+.clock {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.why-us .list,
+.why-us .clock,
+.why-us .dollar-sign {
+  flex: 1;
+  text-align: left;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  -webkit-transition: transform 0.3s, box-shadow 0.3s;
+  -moz-transition: transform 0.3s, box-shadow 0.3s;
+  -ms-transition: transform 0.3s, box-shadow 0.3s;
+  -o-transition: transform 0.3s, box-shadow 0.3s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.why-us .list:hover,
+.why-us .clock:hover,
+.why-us .dollar-sign:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  background-color: #ffeec8;
+}
+.why-us a {
+  text-decoration: none;
+  color: #ef613b;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.why-us i {
+  margin-bottom: 10px;
+}
+
+/* Gaya Teks */
+.why-us h4 {
+  color: #683c11;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.why-us p {
+  font-size: 16px;
+  color: #353535;
+}
+/* Why-us End */
+
+/* Tentang */
+.Tentang {
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.Tentang span {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 52px;
+  z-index: 1;
+  color: #f7eee6;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.Tentang h2 {
+  position: relative;
+  font-size: 32px;
+  z-index: 2;
+  color: #683c11;
+  margin: 10px 0;
+}
+
+.Tentang p {
+  font-size: 16px;
+  color: #353535;
+}
+.isi-tentang {
+  display: flex;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+.isi-tentang .img-tentang {
+  flex: 1 1 45rem;
+}
+.isi-tentang .img-tentang img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.isi-tentang .detail-isteng {
+  flex: 1 1 45rem;
+}
+.detail-isteng {
+  margin-left: 40px;
+  line-height: 2.5rem;
+}
+.detail-isteng h2 {
+  color: #683c11;
+}
+.detail-isteng h3 {
+  color: #835c36;
+}
+
+.detail-isteng .p1,
+.detail-isteng .p2,
+.detail-isteng .p3 {
+  line-height: normal;
+  margin-bottom: 0.7rem;
+  color: #353535;
+}
+/* Tentang End */
+
+/* Layanan Gonako */
+.menu {
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-top: 4%;
+}
+
+.menu span {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 52px;
+  z-index: 1;
+  color: #f7eee6;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.menu h2 {
+  position: relative;
+  font-size: 32px;
+  z-index: 2;
+  color: #532c06;
+  margin: 10px 0;
+}
+
+.menu p {
+  font-size: 16px;
+  color: #353535;
+}
+.isi-menu h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  color: #835c36;
+}
+.isi-menu {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.isi-menu p {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #353535
+  font-size: 16px;
+}
+/* Gallery card */
+
+.gallery {
+  display: flex;
+  gap: 32px;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  left: 0px;
+  width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  transition: 1000ms all;
+  transform-origin: center left;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+  outline: 1px solid #ffffff;
+  overflow: hidden;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.card img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  box-shadow: 0 0 20px #f34617;
+  margin: 12px;
+}
+.card:hover figcaption {
+  font-size: 0.9rem;
+  position: absolute;
+  height: 350px;
+  width: 400px;
+  display: flex;
+  align-items: end;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0) 20%
+  );
+  color: #502a04;
+  left: 0px;
+  bottom: 0px;
+  padding-left: 12px;
+  padding-bottom: 10px;
+}
+.card:hover figcaption h3 {
+  text-shadow: 0.5px 0.5px white;
+}
+
+.card:hover ~ .card {
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateX(22px);
+}
+.pesan-gorengan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Gallery Nasi Kotak */
+.nasi .nasi-kotak {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  color: #835c36;
+  margin-top: 2.5%;
+}
+/* Menu Nasi Kotak*/
+.nasi {
+  padding-top: 1.9%;
+}
+.nasi-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 25px;
+}
+
+.menu-card {
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 8px;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 35px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.menu-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #915010;
+}
+
+.menu-card h4 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.menu-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+.tbl-pesan {
+  background-color: #f34617;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.tbl-pesan a {
+  color: white;
+}
+
+/* Efek Hover */
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgb(243, 70, 23);
+  border: 1px solid #f34617;
+}
+.tbl-pesan:hover {
+  background-color: #502a04;
+}
+.request {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+.request p {
+  margin-bottom: 10px;
+}
+/* Menu Nasi Kotak End */
+/* Layanan Gonako End */
+
+/* Kontak kami */
+.kontak-kami {
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-top: 4%;
+}
+
+.kontak-kami span {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 52px;
+  z-index: 1;
+  color: #f7eee6;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.kontak-kami h2 {
+  position: relative;
+  font-size: 32px;
+  z-index: 2;
+  color: #532c06;
+  margin: 10px 0;
+}
+
+.kontak-kami p {
+  font-size: 16px;
+  color: #353535;
+}
+
+.isi-kontak-kami {
+  display: flex;
+  flex: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+  gap: 40px;
+  height: 17rem;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.isi-kontak-kami .alamat {
+  flex: 1;
+}
+.isi-kontak-kami .alamat a {
+  color: #683c11;
+}
+
+.mail-wa {
+  display: flex;
+  flex: 1;
+  gap: 40px;
+}
+.mail-wa .mail-kontak {
+  flex: 1;
+}
+.mail-wa .whatsapp-kontak {
+  flex: 1;
+}
+
+.alamat,
+.mail-kontak,
+.whatsapp-kontak {
+  text-align: center;
+  padding: 25px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alamat img,
+.mail-kontak img,
+.whatsapp-kontak img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.alamat h3,
+.mail-kontak h3,
+.whatsapp-kontak h3 {
+  font-size: 24px;
+  color: #683c11;
+}
+
+.alamat p,
+.mail-kontak a,
+.whatsapp-kontak p {
+  font-size: 16px;
+  color: #353535;
+  margin-top: 10px;
+}
+
+.mail-kontak a,
+.whatsapp-kontak p {
+  text-decoration: none;
+  color: #683c11;
+  transition: color 0.3s;
+}
+
+.mail-kontak a:hover,
+.whatsapp-kontak p:hover,
+.alamat p a:hover {
+  color: #f34617;
+}
+/* Kontak kami End */
+
+/* Peta dan pesan */
+.peta-pesan {
+  display: flex;
+  flex: 1;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 10px;
+  margin-top: 15px;
+  gap: 30px;
+  justify-content: space-around;
+}
+.peta-pesan .peta {
+  flex: 1;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.peta-pesan .pesan-po {
+  flex: 1;
+  position: relative;
+}
+/* Peta dan Pesan End */
+
+/* pesan */
+.php-email-form {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+.php-email-form .row {
+  margin-bottom: 20px;
+}
+
+.php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.php-email-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.php-email-form input[type="text"],
+.php-email-form input[type="email"],
+.php-email-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.php-email-form textarea {
+  resize: none;
+}
+
+.php-email-form .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.php-email-form .my-3 {
+  text-align: center;
+}
+
+.php-email-form .loading,
+.php-email-form .error-message,
+.php-email-form .sent-message {
+  display: none;
+  text-align: center;
+}
+
+.php-email-form button {
+  background-color: #f34617;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.php-email-form button:hover {
+  background-color: #502a04;
+}
+
+.php-email-form .loading {
+  color: #f34617;
+}
+
+.php-email-form .error-message {
+  color: #ff0000;
+}
+
+.php-email-form .sent-message {
+  color: #008000;
+}
+
+/* Add your styles for the footer */
+/* Footer */
+.bg-foot {
+  background-color: #fceecf;
+}
+footer {
+  color: #502a04;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.foot-gonako h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #502a04;
+}
+
+.foot-gonako p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #502a04;
+}
+.foot-gonako a {
+  color: #502a04;
+}
+
+.foot-kon {
+  display: flex;
+  flex-direction: column;
+}
+.foot-kon p {
+  display: none;
+}
+.foot-wa, .foot-mail {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.foot-wa img, .foot-mail img {
+  width: 35px;
+  height: 35px;
+}
+
+.foot-wa a, .foot-mail a {
+  text-decoration: none;
+  color: #502a04;
+}
+
+.foot-sosial {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.foot-sosial a {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  background-color: #f8dfa3;
+  color: #502a04;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+}
+/* Footer End */
+
+/* TOmbol scrool */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f34617;
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 4px;
+  opacity: 50%;
+}
+#scrollToTopBtn img {
+  width: 30px;
+  height: auto;
+}
+#scrollToTopBtn:hover {
+  background-color: #502a04;
+}
+
+
+
+/* dekstop */
+@media (max-width: 1630px) {
+}
+/* Laptop */
+@media (max-width: 1366px) {
+  .isi-tentang {
+    flex-wrap: wrap;
+  }
+  .detail-isteng {
+    margin-left: 0;
+  }
+  .menu-card {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .isi-banner .tombol {
+    box-shadow: 3px 6px 6px 2px rgba(233, 78, 27, 1);
+    padding: 0.3rem 2.5rem;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+  .peta-pesan {
+  flex-direction: column;
+  }
+
+  .peta-pesan .peta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .peta-pesan .pesan-po {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .why-us {
+    flex-direction: column;
+  }
+  .clock {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.1%;
+    margin-bottom: 1.1%;
+  }
+  .menu-card {
+    margin-top: 20px;
+  }
+
+  .peta-pesan .peta {
+        padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #burger {
+    display: inline-block;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fcf7eb;
+    width: 10rem;
+    height: 100vh;
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+    transition: opacity 0.7s, visibility 0.7s;
+  }
+  .navbar-nav.active {
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .navbar .navbar-nav {
+    display: block;
+    font-size: 2rem;
+  }
+  .dropdown {
+    margin-left: 11%;
+  }
+  .navbar-top .icon-sosmed img {
+    width: 20px;
+    height: 20px;
+  }
+  .logo img {
+    width: 159px;
+    height: 57px;
+  }
+  .home .isi-home {
+    padding: 1.4rem 6%;
+    max-width: 38rem;
+  }
+
+  .home .isi-home h1 {
+    font-size: 2.9rem;
+  }
+  .home .isi-home p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-top: 1rem;
+  }
+  .home .isi-home .tombol {
+    padding: 0.6rem 2.1rem;
+    font-size: 1.2rem;
+  }
+  .why-us {
+    flex-direction: column;
+  }
+  .clock {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3%;
+    margin-bottom: 3.4%;
+  }
+  .Tentang {
+    margin-top: 7.5%;
+  }
+  /* card gallery */
+  .gallery {
+    gap: 14px;
+    padding: 14px;
+  }
+  .card {
+    width: 140px;
+    height: 160px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .card img {
+    height: 160px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .card:hover {
+    margin: 12px;
+  }
+  .card:hover figcaption {
+    font-size: 0.7rem;
+    height: 140px;
+    width: 160px;
+  }
+  /* menu nasi kotak */
+  
+  .menu-card h2 {
+    font-size: 18px;
+  }
+
+  .menu-card h4 {
+    font-size: 14px;
+  }
+  .nasi-menu {
+    flex-direction: column;
+  }
+
+  .menu-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+  /* kontak kami */
+  .kontak-kami {
+    margin-bottom: 180px;
+  }
+  
+  .isi-kontak-kami {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .mail-wa {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .isi-kontak-kami img {
+    width: 40px;
+    height: 40px;
+  }
+  .isi-kontak-kami h3 {
+    font-size: 18px;
+  }
+  .peta-pesan {
+    margin-top: 180px;
+    flex-direction: column;
+  }
+  .peta {
+    max-width: 100%; 
+    width: 100%; 
+    height: auto;
+  }
+  
+  /* Untuk menghindari batas gambar melebar lebih dari layar */
+  iframe {
+    max-width: 100%;
+  }
+  
+  .request {
+    margin-bottom: 10%;
+  }
+  /* footer */
+  footer {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    }
+  
+    .footer-top {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .foot-kon,
+    .foot-sosial {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  
+    .foot-sosial {
+      align-items: center;
+    }
+  
+    .foot-sosial a {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .foot-gonako h2 {
+      font-size: 20px;
+    }
+  
+    .foot-gonako p {
+      margin-bottom: 2px;
+    }
+    .foot-gonako p,
+    .foot-wa a,
+    .foot-mail a {
+      font-size: 14px;
+    }
+    .foot-kon h3,
+    .foot-sosial h3 {
+      display: none;
+    }
+    
+    .foot-wa img,
+    .foot-mail img {
+      display: none;
+    }
+  
+    .foot-kon {
+      align-items: center;
+    }
+    .foot-kon p {
+      display: contents;
+      font-size: 14px;
+    }
+  
+    .foot-kon a {
+      color: #f34617;
+      margin-left: 8px;
+    }
+  
+    .foot-wa,
+    .foot-mail {
+      gap: 0px;
+    }
+    .foot-sosial img {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .footer-bottom {
+      font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .mail img {
+    height: 14px;
+    width: 14px;
+  }
+  .mail .info-detail {
+    font-size: 80%;
+  }
+  .whatsapp img {
+    height: 14px;
+    width: 14px;
+  }
+  .whatsapp .info-detail {
+    font-size: 80%;
+  }
+  .navbar-top .icon-sosmed img {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+  }
+  .logo img {
+    width: 146px;
+    height: 52px;
+  }
+  .home .isi-home .tombol {
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+  }
+  .menu-card {
+    margin-top: 0px;
+  }
+  .why-us .list,
+  .why-us .clock,
+  .why-us .dollar-sign {
+    text-align: center;
+    line-height: 1.2;
+    padding: 20px;
+  }
+  .detail-isteng {
+    text-align: justify;
+  }
+  .detail-isteng h2,
+  .detail-isteng h3 {
+    text-align: center;
+  }
+  .nasi-menu {
+    flex-direction: column;
+  }
+
+  .menu-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+  /* kontak kami */
+  .kontak-kami {
+    margin-bottom: 180px;
+  }
+  
+  .isi-kontak-kami {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .mail-wa {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .isi-kontak-kami img {
+    width: 40px;
+    height: 40px;
+  }
+  .isi-kontak-kami h3 {
+    font-size: 18px;
+  }
+  .peta-pesan {
+    margin-top: 180px;
+    flex-direction: column;
+  }
+  .peta {
+    max-width: 100%; 
+    width: 100%; 
+    height: auto;
+  }
+  
+  /* Untuk menghindari batas gambar melebar lebih dari layar */
+  iframe {
+    max-width: 100%;
+  }
+  
+  .request {
+    margin-bottom: 10%;
+  }
+  /* footer */
+  footer {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    }
+  
+    .footer-top {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .foot-kon,
+    .foot-sosial {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  
+    .foot-sosial {
+      align-items: center;
+    }
+  
+    .foot-sosial a {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .foot-gonako h2 {
+      font-size: 20px;
+    }
+  
+    .foot-gonako p {
+      margin-bottom: 2px;
+    }
+    .foot-gonako p,
+    .foot-wa a,
+    .foot-mail a {
+      font-size: 14px;
+    }
+    .foot-kon h3,
+    .foot-sosial h3 {
+      display: none;
+    }
+    
+    .foot-wa img,
+    .foot-mail img {
+      display: none;
+    }
+  
+    .foot-kon {
+      align-items: center;
+    }
+    .foot-kon p {
+      display: contents;
+      font-size: 14px;
+    }
+  
+    .foot-kon a {
+      color: #f34617;
+      margin-left: 8px;
+    }
+  
+    .foot-wa,
+    .foot-mail {
+      gap: 0px;
+    }
+    .foot-sosial img {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .footer-bottom {
+      font-size: 14px;
+    }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-top .icon-sosmed img {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+  }
+  .home .isi-home {
+    padding: 1.4rem 6%;
+    max-width: 20rem;
+    margin-top: 5%;
+  }
+
+  .home .isi-home h1 {
+    font-size: 2rem;
+  }
+  .home .isi-home p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-top: 1.2rem;
+  }
+  .why-us .list,
+  .why-us .clock,
+  .why-us .dollar-sign {
+    text-align: center;
+    line-height: 1.2;
+    padding: 20px;
+  }
+  .detail-isteng {
+    text-align: justify;
+  }
+  .detail-isteng h2,
+  .detail-isteng h3 {
+    text-align: center;
+  }
+  /* card galery */
+  .gallery {
+    gap: 10px;
+    padding: 10px;
+  }
+  .card:hover figcaption {
+    font-size: 0.6rem;
+  }
+  .card {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .card:hover {
+    box-shadow: 0 0 10px #f34617;
+  }
+
+  /* menu nasi kotak */
+  .menu-card h2 {
+    font-size: 18px;
+  }
+
+  .menu-card h4 {
+    font-size: 14px;
+  }
+   
+  .home .isi-home .tombol {
+    padding: 10px 20px;
+  }
+  /* kontak kami */
+  .kontak-kami {
+    margin-bottom: 170px;
+  }
+  .isi-kontak-kami {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .mail-wa {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .isi-kontak-kami img {
+    width: 35px;
+    height: 35px;
+  }
+  .isi-kontak-kami h3 {
+    font-size: 18px;
+  }
+  
+
+  .peta-pesan {
+    margin-top: 175px;
+  }
+  .peta {
+    max-width: 100%; 
+    width: 100%; 
+    height: auto;
+  }
+  
+  /* Untuk menghindari batas gambar melebar lebih dari layar */
+  iframe {
+    max-width: 100%;
+  }
+  .peta-pesan {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  /* footer */
+  footer {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .foot-kon,
+  .foot-sosial {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .foot-sosial {
+    align-items: center;
+  }
+
+  .foot-sosial a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .foot-gonako h2 {
+    font-size: 20px;
+  }
+
+  .foot-gonako p {
+    margin-bottom: 2px;
+  }
+  .foot-gonako p,
+  .foot-wa a,
+  .foot-mail a {
+    font-size: 14px;
+  }
+  .foot-kon h3,
+  .foot-sosial h3 {
+    display: none;
+  }
+  
+  .foot-wa img,
+  .foot-mail img {
+    display: none;
+  }
+
+  .foot-kon {
+    align-items: center;
+  }
+  .foot-kon p {
+    display: contents;
+    font-size: 14px;
+  }
+
+  .foot-kon a {
+    color: #f34617;
+    margin-left: 8px;
+  }
+
+  .foot-wa,
+  .foot-mail {
+    gap: 0px;
+  }
+  .foot-sosial img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-bottom {
+    font-size: 14px;
+  }
+  #scrollToTopBtn {
+    padding: 1px 1px;
+  }
+  #scrollToTopBtn img {
+    width: 2;
+    height: auto;
+  }
+  .request {
+    margin-bottom: 10%;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .icon-sosmed {
+    display: none;
+  }
+  .navbar-top {
+    justify-content: space-around;
+  }
+}
